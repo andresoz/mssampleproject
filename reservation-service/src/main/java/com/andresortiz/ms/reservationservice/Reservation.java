@@ -1,4 +1,4 @@
-package com.andresortiz.ms.guestservice.entities;
+package com.andresortiz.ms.reservationservice;
 
 import javax.persistence.*;
 import java.time.LocalDate;

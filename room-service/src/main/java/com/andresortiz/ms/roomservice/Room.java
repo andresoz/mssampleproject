@@ -1,4 +1,4 @@
-package com.andresortiz.ms.guestservice.entities;
+package com.andresortiz.ms.roomservice;
 
 import javax.persistence.*;
 

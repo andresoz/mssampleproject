@@ -1,6 +1,5 @@
-package com.andresortiz.ms.guestservice.repositories;
+package com.andresortiz.ms.reservationservice;
 
-import com.andresortiz.ms.guestservice.entities.Reservation;
 import org.springframework.data.repository.CrudRepository;
 
 public interface ReservationRepository extends CrudRepository<Reservation, Long> {

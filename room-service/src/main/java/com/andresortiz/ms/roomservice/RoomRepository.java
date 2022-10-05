@@ -1,6 +1,5 @@
-package com.andresortiz.ms.guestservice.repositories;
+package com.andresortiz.ms.roomservice;
 
-import com.andresortiz.ms.guestservice.entities.Room;
 import org.springframework.data.repository.CrudRepository;
 
 public interface RoomRepository extends CrudRepository<Room, Long> {
