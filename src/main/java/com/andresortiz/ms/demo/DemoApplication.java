@@ -1,4 +1,4 @@
-package com.samples.project.demo;
+package com.andresortiz.ms.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
