@@ -7,15 +7,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/rooms")
-public class RoomWebServices {
+public class RoomWebService {
 
     private final RoomRepository repository;
 
-    public RoomWebServices(RoomRepository repository) {
+    public RoomWebService(RoomRepository repository) {
         this.repository = repository;
     }
 
-    @GetMapping("/")
+    @GetMapping
     Iterable<Room> getAllRooms(){
         return repository.findAll();
     }

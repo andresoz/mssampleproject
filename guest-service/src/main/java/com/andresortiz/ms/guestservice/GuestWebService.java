@@ -1,4 +1,4 @@
-package com.andresortiz.ms.reservationservice;
+package com.andresortiz.ms.guestservice;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -6,22 +6,22 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/reservations")
-public class ReservationWebServices {
+@RequestMapping("/guests")
+public class GuestWebService {
 
-    private final ReservationRepository repository;
+    private final GuestRepository repository;
 
-    public ReservationWebServices(ReservationRepository repository) {
+    public GuestWebService(GuestRepository repository) {
         this.repository = repository;
     }
 
-    @GetMapping("/")
-    Iterable<Reservation> getAllReservations(){
+    @GetMapping
+    public Iterable<Guest> getAllGuests(){
         return repository.findAll();
     }
 
     @GetMapping("/{id}")
-    Reservation getReservation(@PathVariable("id") long id){
+    public Guest getGuest(@PathVariable("id") long id){
         return repository.findById(id).get();
     }
 }

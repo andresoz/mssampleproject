@@ -19,7 +19,7 @@ public class Reservation {
     private long guestID;
 
     @Column(name = "RES_DATE")
-    private LocalDate resDate;
+    private LocalDate date;
 
     public long getId() {
         return id;
@@ -46,10 +46,10 @@ public class Reservation {
     }
 
     public LocalDate getResDate() {
-        return resDate;
+        return date;
     }
 
     public void setResDate(LocalDate resDate) {
-        this.resDate = resDate;
+        this.date = resDate;
     }
 }
