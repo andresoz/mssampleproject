@@ -7,8 +7,8 @@ import javax.persistence.*;
 public class Room {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "ROOM_ID")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     long id;
 
     @Column(name = "NAME")
@@ -19,4 +19,36 @@ public class Room {
 
     @Column(name = "BED_INFO")
     String bedInfo;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getRoomNumber() {
+        return roomNumber;
+    }
+
+    public void setRoomNumber(String roomNumber) {
+        this.roomNumber = roomNumber;
+    }
+
+    public String getBedInfo() {
+        return bedInfo;
+    }
+
+    public void setBedInfo(String bedInfo) {
+        this.bedInfo = bedInfo;
+    }
 }

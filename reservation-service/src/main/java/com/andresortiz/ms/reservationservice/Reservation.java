@@ -6,9 +6,10 @@ import java.time.LocalDate;
 @Entity
 @Table(name = "RESERVATION")
 public class Reservation {
+
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "RESERVATION_ID")
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
 
     @Column(name = "ROOM_ID")
@@ -19,4 +20,36 @@ public class Reservation {
 
     @Column(name = "RES_DATE")
     private LocalDate resDate;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public long getRoomId() {
+        return roomId;
+    }
+
+    public void setRoomId(long roomId) {
+        this.roomId = roomId;
+    }
+
+    public long getGuestID() {
+        return guestID;
+    }
+
+    public void setGuestID(long guestID) {
+        this.guestID = guestID;
+    }
+
+    public LocalDate getResDate() {
+        return resDate;
+    }
+
+    public void setResDate(LocalDate resDate) {
+        this.resDate = resDate;
+    }
 }
